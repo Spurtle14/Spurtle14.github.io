@@ -24,3 +24,8 @@ var auth = new FirebaseSimpleLogin(chatRef, function(error, user) {
     // user is logged out
   }
 });
+
+auth.login('password', {
+  email: '<email@domain.com>',
+  password: '<password>'
+});
