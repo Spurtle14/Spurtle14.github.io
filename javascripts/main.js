@@ -1,5 +1,9 @@
 console.log('This would be the main JS file.');
 
+<script type='text/javascript'
+        src='https://cdn.firebase.com/js/simple-login/1.4.1/firebase-simple-login.js'>
+</script>
+
 var chatRef = new Firebase('https://luminous-fire-5993.firebaseio.com/');
 var auth = new FirebaseSimpleLogin(chatRef, function(error, user) {
   if (error) {
