@@ -29,3 +29,8 @@ auth.login('password', {
   email: '<email@domain.com>',
   password: '<password>'
 });
+
+
+var signUp = function(){
+        
+}
