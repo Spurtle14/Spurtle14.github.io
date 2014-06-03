@@ -30,5 +30,9 @@ auth.login('password', {
 var signUp = function(){
         var userName = new Firebase('https://luminous-fire-5993.firebaseio.com/');
         userName.set(document.getElementById('username'));
+        
+        
+        var lastName = new Firebase('https://luminous-fire-5993.firebaseio.com/');
+        lastName.set(document.getElementById('lastname'));
  
 }
