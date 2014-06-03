@@ -38,4 +38,8 @@ var signUp = function(){
     var firstName = new Firebase('https://luminous-fire-5993.firebaseio.com/');
         firstName.set(document.getElementById('firstname'));
  
+     var studentPin = new Firebase('https://luminous-fire-5993.firebaseio.com/');
+        studentPin.set(document.getElementById('studentpin'));
+ 
+ 
 }
