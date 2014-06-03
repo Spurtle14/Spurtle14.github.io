@@ -1,9 +1,5 @@
 console.log('This would be the main JS file.');
 
-<script type='text/javascript'
-        src='https://cdn.firebase.com/js/simple-login/1.4.1/firebase-simple-login.js'>
-</script>
-
 
 auth.createUser(email, password, function(error, user) {
   if (!error) {
@@ -32,5 +28,7 @@ auth.login('password', {
 
 
 var signUp = function(){
-        
+        var userName = new Firebase('https://luminous-fire-5993.firebaseio.com/');
+        userName.set(document.getElementById('username'));
+ 
 }
