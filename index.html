@@ -51,48 +51,6 @@
 <p>To create an account click here. <a href="http://www.authpro.com/auth/kcartrun/">Here</a></p>
 
 
-<p> To order from the Cafeteria please fill out form. <a href="https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dGI0dFlqOXgwM2FCMmZFN2ZBT244TlE6MA">Cafeteria</a></p>
-<p> To arrange a meeting in the Office please fill out this form. <a href="https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dEJldlB6VHdxVXdSTEc1VmdsanFVTEE6MA">Office</a></p>
-<p> To check out books from the Library please fill out the form. <a href="https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dFJxRnQ2QUFHT1pPWkpSYUpxamV2aEE6MA">Library</a></p>
-<form>
-<fieldset>
-    <legend>Sign-Up</legend>
-    <table cellpadding="3">
-      <tr><td width="150px"><strong>Username (Email)</strong></td><td><input type="text" name="username" id="username" onclick="userName();"></td></tr>
-      <tr><td><strong>First name</strong></td><td><input type="text" name="firstname" id="lastname" onclick="lastName();"></td></tr>
-      <tr><td><strong>Last name</strong></td><td><input type="text" name="lastname" id="firstname" onclick="firstName();"></td></tr>
-      <tr><td>Student PIN</strong></td><td><input type="text" name="refid" id="studentpin" onclick="studentPin();"></td></tr>
-    </table>
-    </fieldset>
-
-
-
-<fieldset style="text-align: center">
-    <legend>Terms & conditions</legend>
-
-    <textarea cols="50" rows="5">Please make legitimate orders.</textarea>
-    <br/>
-    I confirm that I agree with terms & conditions <input type="checkbox" name="agreeWithTerms" value="Y">
-    <br/><br/>
-    
-    <?php
-      if(array_key_exists('cumulativeErrorMessage', $_POST) && $_POST['cumulativeErrorMessage'] != '') {
-    ?>
-    <fieldset style="color: #ff0000;">
-      
-        <?php echo $_POST['cumulativeErrorMessage']?>
-    </fieldset>
-    <?php
-      }
-    ?>
-    <br/>
-    
-    <input type="submit" value="Signup">
-    <input type="hidden" name="errorUrl" value="about.html">
-    <input type="hidden" name="successUrl" value="products.html">
-
-</form>
-
 <h5>Meet the Crew</h5>
 
 
